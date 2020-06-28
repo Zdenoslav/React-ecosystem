@@ -1,16 +1,14 @@
-import React from 'react';
-import './ToDoListItem.css'
+import React from "react";
+import "./ToDoListItem.css";
 
-const TodoListItem = (
-    {todo}) => (
-
-    <div className="todo-item-container">
-        <h3>{todo.text}</h3>
+const TodoListItem = ({ todo }) => (
+  <div className="todo-item-container">
+    <h3>{todo.text}</h3>
     <div className="buttons-container">
-        <button className="completed-button">Mark as completed</button>
-        <button className="remove-button">Remove</button>
+      <button className="completed-button">Mark as completed</button>
+      <button className="remove-button">Remove</button>
     </div>
-</div>
-)
+  </div>
+);
 
-export default ToDoListItem;
+export default TodoListItem;
